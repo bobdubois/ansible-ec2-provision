@@ -1,7 +1,7 @@
 ---
 - hosts: all
 
-  tasks
+  tasks:
   - name: provision EC2 instances
     ec2:
       key_name: ose-handson-keypair
