@@ -1,5 +1,8 @@
 ---
 - hosts: localhost
+  connection: local
+  gather_facts: false
+  user: root
 
   tasks:
   - name: provision EC2 instances
