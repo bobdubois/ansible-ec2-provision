@@ -1,0 +1,14 @@
+---
+- hosts: all
+
+  tasks
+  - name: provision EC2 instances
+    ec2:
+      key_name: ose-handson-keypair
+      instance_type: t2.micro
+      image: ami-8b8c57f8
+      wait: yes
+      group: AWS-Ireland
+      count: 3
+      vpc_subnet_id: subnet-b0fcdac7
+      assign_public_ip: yes
