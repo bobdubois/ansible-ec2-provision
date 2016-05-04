@@ -12,7 +12,7 @@
       image: ami-8b8c57f8
       wait: yes
       group: default
-      count: {{ instance_count }}
+      count: "{{ instance_count }}"
       vpc_subnet_id: subnet-b0fcdac7
       assign_public_ip: yes
       region: "eu-west-1"
