@@ -15,3 +15,4 @@
       count: 3
       vpc_subnet_id: subnet-b0fcdac7
       assign_public_ip: yes
+      region: "eu-west-1"
